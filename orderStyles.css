@@ -1,0 +1,84 @@
+.contactForm{
+    padding-top: 50px;
+}
+
+.napbild{
+  height: 160px;
+     width: 260px;
+     margin: 20px;
+}
+
+.napinformation{
+  padding-left: 20px;
+}
+
+
+input[type=email] {
+    width: 260px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+
+  select {
+    width: 260px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .ContactformContainer{
+    width: 260px;
+    margin-left: 100px;
+  }
+
+.contactForm {
+  border: 2px solid black;
+    width: 260px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.naprapat {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+
+.naprapater{
+  display: flex;
+}
+
+.doubleContainer{
+  display: flex;
+  height: 500px;
+}
+
+
+
+.services-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+h3 {
+  color: #333;
+}
