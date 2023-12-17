@@ -1,0 +1,124 @@
+<!DOCTYPE html5>
+<html lang="sv">
+    <head>
+<title>Rörelseliv Naprapati</title>
+<meta charset="UTF-8">
+<link rel="icon" href="icon.png" type="image/x-icon" />
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="orderStyles.css">
+<script src="funnyscript.js">
+</script>
+    </head>
+<body>
+<div id="index">
+    <div class="navbar">
+        <a href="Start.html">Startsida</a>
+        <a href="About.html">Om oss</a>
+        <a href="Contact.html">Kontakta oss</a>
+</div>
+
+<div class="pageContainer">
+    
+    <div class="naprapater"> 
+        <div class="naprapat">
+            <img 
+            class="napbild"
+            src="zlatanbild.jpg" 
+            alt="zlatanpic">
+            <div class="napinformation">
+                <label for="name">Zlatan Ibrahimovic</label>
+                <p id="cost">Kostnad: 200kr</p>
+            </div>
+        </div>
+       
+        <div class="naprapat">
+            <img
+            class="napbild"
+            src="dejanbild.jpg"
+            alt="dejanpic">
+            <div class="napinformation">
+                <label for="name">Dejan Kulusevski</label>
+                <p id="cost">Kostnad: 400kr</p>
+            </div>
+        </div>
+            
+        <div class="naprapat">
+            <img
+            class="napbild"
+            src="Gretabild.jpg"
+            alt="gretapic">
+            <div class="napinformation">
+                <label for="name">Greta Thunberg</label>
+                <p id="cost">Kostnad: 800kr</p>
+            </div>
+        </div>
+</div>
+<div class="doubleContainer">
+
+    <div class="services-container">
+        <h2>Våra naprapat tjänster</h2>
+        <ul class="services-list">
+          <li class="service-item">
+            <p>Akupunktur 500kr</p>
+          </li>
+          <li class="service-item">
+            <p>Naprapati 800kr</p>
+          </li>
+          <li class="service-item">
+            <p>Kiropraktik 300kr</p>
+          </li>
+          <li class="service-item">
+            <p>Masssage 150kr</p>
+          </li>
+          <li class="service-item">
+            <p>Stötvåg 250kr</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ContactformContainer">
+        <h4 style="margin-top: 0;">Vänligen välj naprapat, tjänst och fyll i din email för bekräftelsekvitto</h4>
+        <form class="contactForm">
+            <label for="name">Naprapat:</label>
+            <select id="name" name="name" class="selectnap" onchange="setNaprapat(value)">
+                <option value="" selected disabled style="display:none;">Välj naprapat</option>
+                <option value="1">Zlatan Ibrahimovic</option>
+                <option value="2">Dejan Kulusevski</option>
+                <option value="3">Greta Thunberg</option>
+              </select>
+            <br><br>
+            <select id="behandling" name="behandling" class="selectservice" onchange="setServiceCost(value)">
+                <option value="" selected disabled style="display:none;">Välj behandling</option>
+                <option value="1">Akupunktur</option>
+                <option value="2">Naprapati</option>
+                <option value="3">Kiropraktik</option>
+                <option value="4">Masssage</option>
+                <option value="5">Stötvåg</option>
+              </select>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+    
+            <div class="costContainer">
+                <label for="kostnad" >Kostnad: </label><p id="price"></p>
+            </div>
+            
+            <input class="orderbutton" type="submit" value="Beställ" onclick="orderAndSendEmail()">
+          </form>
+    </div>
+
+      
+</div>
+
+
+   
+
+   
+</div>
+
+
+</div>
+</body>
+</html>
